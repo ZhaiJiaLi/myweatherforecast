@@ -1,0 +1,198 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,maximum=1.0," >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天气App</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_834525_ocw3zp59.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <span>
+            上海
+        </span>
+        <div class="audioBtn">
+            <i class="iconfont icon-laba"></i>
+        </div>
+
+    </div>
+    <div class="screen">
+        <div class="aqi">
+            <span id="aqi">69</span>
+            <span id="quality">优</span>
+        </div>
+        <h3>
+            <span id="tem">37</span>
+        </h3>
+        <h4><span id="daycondition">多云</span></h4>
+        <h5> <span id="dirctionWind">南风 2级</span></h5>
+    </div>
+    <div class="day">
+        <div class="today">
+            <span>今天</span>
+            <span id="heigh-low">29/18</span>
+            <span id="day_condition">晴</span>
+            <span><img src="img/0.png" alt="" id="dat_weather_icon_id"></span>
+        </div>
+        <div class="tomorrow">
+            <span>明天</span>
+            <span id="tomorrow_high_temperature">29/16</span>
+            <span id="tomorrow_condition">多云</span>
+            <span><img src="img/1.png" alt="" id="tomorrow_weather_icon_id"></span>
+        </div>
+    </div>
+    <div class="hours">
+        <div class="con">
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+            <div class="box">
+                <div><span>14</span>:00</div>
+                <img src="img/0.png" alt="">
+                <div><span>28</span>°</div>
+            </div>
+        </div>
+    </div>
+    <div class="week">
+        <div class="con">
+            <div class="box">
+                <span>今天</span>
+                <span class="date">01/15</span>
+                <span class="daycondition">多云</span>
+                <img src="img/3.png" alt="" class="dayimg">
+                <img src="img/1.png" alt="" class="nightimg">
+                <span class="nightcondition">晴</span>
+                <span class="wind_direction">西北风</span>
+                <div><span>3级</span></div>
+            </div>
+            <div class="box">
+                <span>今天</span>
+                <span class="date">01/15</span>
+                <span class="daycondition">多云</span>
+                <img src="img/3.png" alt="" class="dayimg">
+                <img src="img/1.png" alt="" class="nightimg">
+                <span class="nightcondition">晴</span>
+                <span class="wind_direction">西北风</span>
+                <div><span>3级</span></div>
+            </div>
+            <div class="box">
+                <span>今天</span>
+                <span class="date">01/15</span>
+                <span class="daycondition">多云</span>
+                <img src="img/3.png" alt="" class="dayimg">
+                <img src="img/1.png" alt="" class="nightimg">
+                <span class="nightcondition">晴</span>
+                <span class="wind_direction">西北风</span>
+                <div><span>3级</span></div>
+            </div>
+            <div class="box">
+                <span>今天</span>
+                <span class="date">01/15</span>
+                <span class="daycondition">多云</span>
+                <img src="img/3.png" alt="" class="dayimg">
+                <img src="img/1.png" alt="" class="nightimg">
+                <span class="nightcondition">晴</span>
+                <span class="wind_direction">西北风</span>
+                <div><span>3级</span></div>
+            </div>
+            <div class="box">
+                <span>今天</span>
+                <span class="date">01/15</span>
+                <span class="daycondition">多云</span>
+                <img src="img/3.png" alt="" class="dayimg">
+                <img src="img/1.png" alt="" class="nightimg">
+                <span class="nightcondition">晴</span>
+                <span class="wind_direction">西北风</span>
+                <div><span>3级</span></div>
+            </div>
+            <div class="box">
+                <span>今天</span>
+                <span class="date">01/15</span>
+                <span class="daycondition">多云</span>
+                <img src="img/3.png" alt="" class="dayimg">
+                <img src="img/1.png" alt="" class="nightimg">
+                <span class="nightcondition">晴</span>
+                <span class="wind_direction">西北风</span>
+                <div><span>3级</span></div>
+            </div>
+            <div class="box">
+                <span>今天</span>
+                <span class="date">01/15</span>
+                <span class="daycondition">多云</span>
+                <img src="img/3.png" alt="" class="dayimg">
+                <img src="img/1.png" alt="" class="nightimg">
+                <span class="nightcondition">晴</span>
+                <span class="wind_direction">西北风</span>
+                <div><span>3级</span></div>
+            </div>
+        </div>
+        <div class="canvas"></div>
+    </div>
+    <div class="cityBox">
+        <div class="search">
+            <input type="text" placeholder="搜索地区">
+            <button>确认</button>
+        </div>
+        <h2>山西</h2>
+        <div class="con">
+            <div>洛阳</div>
+            <div>洛阳</div>
+            <div>洛阳</div>
+            <div>洛阳</div>
+            <div>洛阳</div>
+            <div>洛阳</div>
+        </div>
+    </div>
+
+</body>
+</html>
